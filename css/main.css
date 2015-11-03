@@ -1,0 +1,344 @@
+@import url("topbar.css");
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+code {
+	font-family: 'Source Code Pro';
+	font-size: 0.7rem;
+}
+
+/* The 'container' is contained by the body. Has Margins. */
+/* 
+	Look up CSS3 Flex properties! 'flex' is relative to other
+	flexbox items.
+*/
+.container {
+	display: -webkit-flex;
+  	display: flex;
+	max-width: 100%;
+	margin: 0px auto;
+
+	flex-wrap: wrap;
+}
+
+.container.first {
+	margin-top: 4rem;
+}
+
+.flex-column {
+ 	-webkit-flex: 1;
+	flex: 1;
+}
+
+body {
+	font-family: Open Sans, Verdana, sans-serif;
+	font-size: 1em; 
+	color: #222;
+}
+
+/* Navigation */
+nav a {
+	text-decoration: none;
+}
+
+
+article {
+	text-align: left;
+	margin: 2rem 0; 
+	padding: 2rem; 
+	/*border: 1px solid blue;*/
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+/*Hero image and text*/
+.container-header{
+    text-align: center;
+    align-item: center;
+    text-colour: white;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+ }
+
+.container-header-alt{
+    text-align: center;
+    align-item: center;
+    text-colour: white;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-shadow: 0px 0px 10px white;
+}
+/*Hero banner img example*/
+/*#product-red{
+	background-image: url("../imgs/red-large.jpg");
+    background-repeat: no-repeat;
+    width: auto;
+    max-height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+*/
+
+.container-footer{
+	text-align: left;
+    background-color: #e1e1e1;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 5rem;
+    bottom: 100%;
+    width: 100%
+}
+.footer{
+	text-align: left;
+}
+
+/* Body Texts and Lists*/
+p, ul, ol {
+	font-size: 1rem;
+	line-height: 1.3em; 
+	text-align: left;
+	font-weight: normal;
+	color: #3A3A3A;
+}
+
+/* Text Decorations (bold/italic) */
+strong {
+	font-weight: bold;
+	font-size: inherit;
+}
+
+em {
+	font-weight: normal;
+	font-style: italic;
+	font-size: inherit;
+}
+
+/* Headers */
+h1 {
+	font-size: 2rem; 
+	font-weight: normal;
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+	letter-spacing: 0.005em;
+	color: #00995F;
+}
+
+h2 {
+	font-size: 1.6rem; 
+	font-weight: normal;
+	letter-spacing: 0.005em;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	color: #E94B69;
+	line-height: 1.75rem;
+	color: #00995F;
+}
+
+h3 {
+	font-size: 1.2rem;
+	font-weight: bold;
+	font-style: italic;
+	color: #939393;
+}
+
+/* Standard Links */
+a {
+	color: #104D90;
+	font-weight: bold; 
+	transition: 0.5s;
+	text-decoration: none;
+}
+
+a:active, a:hover, a:focus {
+	color: #558AC3;
+}
+
+/* Standard Image/Figure Code */
+img {
+	height: auto; 
+	width: auto;
+	max-width: 100%;
+	/*border: 1px solid #888888; */
+}
+
+
+figure {
+	margin: 0;
+}
+
+
+figcaption {
+	font-size: 0.8rem;
+	font-style: italic;
+}
+
+
+div.divider{
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	border-bottom: solid 1px #939393;
+}
+
+
+/*for the style guides palette boxes*/
+div.box {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+}
+p.colour-block{
+	font-weight: bolder;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+#darkblue {
+	background-color: #104D90;
+}
+
+#lightblue {
+	background-color: #558AC3;
+}
+
+#lightorange {
+	background-color: #FF9273;
+}
+
+#darkorange{
+	background-color: #FF7B70;
+}
+
+#darkgreen{
+	background-color: #00995F;
+}
+#grey{
+	background-color: #939393;
+}
+
+/*End of style guide boxes*/
+
+
+
+
+/*Buttons - Input forms*/
+
+button {
+	transition: 0.4s;
+	-webkit-border-radius: 5;
+	-moz-border-radius: 5;
+	border-radius: 5px;
+	border: none;
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #104D90;
+	padding: 10px 28px 10px 28px;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+button:hover {
+	background: #558AC3;
+	text-decoration: none;
+}
+
+/* Form Mods */
+form {
+	max-width: 100%;
+}
+
+textarea{
+	border: 0;
+	outline: none;
+	background-color: #F2F2F2;
+	padding: 0.75em;
+	width: 100%;
+	margin-top: 0.5rem;
+	display: block;
+	height: 100px;
+	font-family: inherit;
+	color: inherit;
+	font-size: 1rem;
+    line-height: 0.5rem;
+
+}
+
+input{
+	transition: 0.25s;
+	border: 0;
+	border-bottom:solid 2px #DBD6D6;
+	outline: none;
+	background-color: transparent;
+	width: 100%;
+	height: 20px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	display: block;
+	color: #700C2A;
+	font-size: 1rem;
+}
+
+input:focus{
+	border: 0;
+	border-bottom:solid 2px #117A4C;
+	outline: none;
+	background-color: transparent;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	display: block;
+	font-size: 1rem;
+}
+
+::-webkit-input-placeholder {
+    color: #DBD6D6;
+	font-size: 1rem;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   	color: #4c4c4c;
+ 	font-size: 1rem; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   	color: #4c4c4c; 
+ 	font-size: 1rem;
+}
+
+:-ms-input-placeholder {  
+   	color: #4c4c4c;
+	font-size: 1rem;
+}
+
+
+
+/*Media Queries*/
+
+@media (min-width: 50em) {
+	.container {
+		max-width: 70%;
+		margin: auto;
+	}
+
+	input, textarea, .button-nav.bg1.submit {
+		width: 50%;
+	}
+
+	.button-nav.bg1.submit.full {
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+}
