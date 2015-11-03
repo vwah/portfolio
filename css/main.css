@@ -46,7 +46,7 @@ nav a {
 
 article {
 	text-align: left;
-	margin: 2rem 0; 
+	margin: 0.5rem 0; 
 	padding: 2rem; 
 	/*border: 1px solid blue;*/
 	-moz-box-sizing: border-box;
@@ -62,16 +62,10 @@ article {
     text-colour: white;
     padding-top: 10rem;
     padding-bottom: 10rem;
+    /*background colour test*/
+    background-color: red;
  }
 
-.container-header-alt{
-    text-align: center;
-    align-item: center;
-    text-colour: white;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    text-shadow: 0px 0px 10px white;
-}
 /*Hero banner img example*/
 /*#product-red{
 	background-image: url("../imgs/red-large.jpg");
@@ -93,7 +87,9 @@ article {
     margin-top: 5rem;
     bottom: 100%;
     width: 100%
+    background-color: blue;
 }
+
 .footer{
 	text-align: left;
 }
@@ -228,6 +224,49 @@ p.colour-block{
 
 /*Buttons - Input forms*/
 
+.button {
+	transition: 0.4s;
+	border: none;
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #104D90;
+	padding: 10px 28px 10px 28px;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.button:hover {
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #558AC3;
+	text-decoration: none;
+}
+.button:focus {
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #FF7B70;
+	text-decoration: none;
+}
+
+#active {
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #FF7B70;
+	text-decoration: none;
+}
+
 button {
 	transition: 0.4s;
 	-webkit-border-radius: 5;
@@ -252,6 +291,12 @@ button:hover {
 	background: #558AC3;
 	text-decoration: none;
 }
+
+button:active button:focus {
+	background: #FF7B70;
+	text-decoration: none;
+}
+
 
 /* Form Mods */
 form {
