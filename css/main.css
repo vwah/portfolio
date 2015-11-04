@@ -67,15 +67,15 @@ article {
  }
 
 /*Hero banner img example*/
-/*#product-red{
-	background-image: url("../imgs/red-large.jpg");
+#hero-test{
+	background-image: url("../imgs/vancouver_skyline_test.jpg");
     background-repeat: no-repeat;
     width: auto;
     max-height: 400px;
     background-size: cover;
     background-position: center;
 }
-*/
+
 
 .container-footer{
 	text-align: left;

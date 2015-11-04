@@ -1,0 +1,147 @@
+.toplink {
+	font-weight: normal;
+	color: #939393;
+	transition: 0.5s;
+}
+
+.toplink.active {
+	color: #558AC3;
+}
+
+.toplink:hover, .toplink:focus {
+	color: #104D90;
+}
+
+/* Hiding Menus */
+.topbar .container nav ul {
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+.topbar .container nav ul a {
+	display: block;
+	line-height: 2rem;
+	padding:0 1rem;
+	margin: 0 2rem 0 2rem;
+}
+
+.topbar .container nav ul:after {
+	content: ""; clear: both; display: block;
+}
+
+.topbar .container nav ul li {
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+
+	transition: 0.5s;
+}
+
+.topbar .container nav ul ul {
+	display:none;
+	position:absolute;
+	top:100%;
+	left:2rem;
+	padding: 0;
+}
+
+.topbar .container nav ul ul li {
+/*	float: none;*/
+	width: 7rem;
+	float: none;
+}
+
+.topbar .container nav ul li:hover,
+.topbar .container nav ul li:focus {
+	/*background-color: #DBD6D6;*/
+}
+
+.topbar .container nav ul ul a {
+	line-height:120%;
+	padding: 0.7rem 1rem;
+	margin: 0;
+}
+
+.topbar .container nav ul li:hover > ul {
+	display: block;
+	color: #E94B69;
+	background-color: #f1f1f1;
+}
+
+.topbar {
+	background-color: rgba(255,255,255,0.9);
+	box-shadow: 0 0.2rem 1rem 0px rgba(0,0,0,0.26);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0.2rem;
+	z-index: 999;
+}
+
+.topbar .container {
+	height: 2rem;
+ 	align-items: center;
+	-webkit-justify-content: space-around; /* Safari */
+	justify-content: space-around;
+}
+.topbar .container a {
+	margin: 2rem;
+}
+
+.top-nav-button {
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+/* MOBILE LAYOUT */
+.topbar .container.mobile {
+	display: none;
+}
+
+.mobile-menu {
+	border: 1px solid #f1f1f1;
+}
+
+
+/* Mobile Width Query */
+@media(max-width: 50rem) {
+	.topbar .container {
+		display: none;
+	}
+
+	.topbar .container.mobile {
+		display: block;
+		text-align: left;
+	}
+
+	.topbar .container.mobile nav ul {
+		padding: 0;
+		width: 100%;
+
+	}
+
+	.topbar .container.mobile nav ul li:hover > ul {
+		display: block;
+		color: #E94B69;
+		background-color: #f1f1f1;
+		width: 100%;
+	}
+
+	.topbar .container.mobile .mobile-menu li.mobile-li {
+		width: 100%;
+		display: block;
+		max-width: 100%;
+		
+		transition: 0.5s;
+	}
+
+	.topbar .container.mobile .mobile-menu li.mobile-li:hover,
+	.topbar .container.mobile .mobile-menu li.mobile-li:focus {
+		/*background-color: #384448;*/
+	}
+}

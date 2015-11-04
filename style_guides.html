@@ -5,9 +5,39 @@
 	<title>IAT339 - Portfolio Style Guide</title>
 	<link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/topbar.css">
 
   <!-- Source Code Pro -->
   <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+  <div class="topbar">
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="template/template-home.html" class="toplink">Home</a></li>
+          <li><a href="template/template-project.html" class="toplink">Project</a></li>
+          <li><a href="template/template-about.html" class="toplink">About</a></li>
+          <li><a href="style_guides.html" class="toplink active">Style Guide</a></li>
+        </ul>
+      </nav>
+    </div> <!-- end of .container -->
+
+    <div class="container mobile">
+      <nav>
+        <ul>
+          <li class="mobile-menu">
+            <a href="#">Menu</a>
+              <ul>
+                <li class="mobile-li"><a href="template/template-home.html" class="toplink">Home</a></li>
+                <li class="mobile-li"><a href="template/template-project.html" class="toplink">Project</a>
+                </li>
+                <li class="mobile-li"><a href="template/template-about.html" class="toplink">About</a></li>
+                <li class="mobile-li"><a href="../style_guides.html" class="toplink active">Style Guide</a></li>
+              </ul>
+          </li>
+        </ul>
+      </nav>
+    </div> <!-- end of .container.mobile -->
+  </div> <!-- end of .topbar -->
 </head>
 
 
@@ -101,16 +131,17 @@
 
 <!-- Divider for spacing -->
 <div class="divider"></div>
+
+        <h2>Test image</h2>
+        <img src="imgs/vancouver_skyline_test.jpg" alt="vancouver skyline">
      
-        <h2>Heading</h2>
-        <h3>CSS Selector: h1, h2, h3</h3>
+
         <h1>Header at 3rem</h1>
         <h2>Subheader at 1.5rem</h2>
         <h3>Subtitles at 1.25rem</h3>
 
 
         <h2>Paragraphs</h2>
-        <h3>CSS Selector: p</h3>
         <p>Paragraphs at 1.5rem. Bacon ipsum dolor amet kielbasa turducken chuck boudin, hamburger turkey drumstick t-bone biltong tenderloin <em>flank alcatra kevin bresaola chicken ball tip pork loin meatball. </em>pancetta salami. Bacon spare ribs rump salami, short loin pork loin jowl picanha. Shoulder ham ball tip pork chop. Chuck meatloaf jerky, landjaeger capicola pancetta picanha flank alcatra kevin bresaola chicken ball tip pork loin meatball. <strong>Cupim tongue t-bone shankle porchetta </strong>Cupim tongue t-bone shankle porchetta turkey alcatra chicken cow short loin swine pork chop biltong shank.</p>
         <p><strong>Bacon is the best, I absolutely love bacon.</strong><br>
         <em>But the oil is bad for your body, so don't eat that!</em></p>
@@ -120,7 +151,6 @@
 <div class="divider"></div>
 
         <h2>Bulleted Lists</h2>
-        <h3>CSS Selector: ul</h3>
         <ul>
           <li>Red Pill for $800 dollars</li>
           <li>Blue Pill for $750 dollars</li>
@@ -128,7 +158,6 @@
         </ul>
  
         <h2>Numbered Lists</h2>
-        <h3>CSS Selector: ol</h3>
         <ol>
           <li>Land on page</li>
           <li>Navigate to products</li>
