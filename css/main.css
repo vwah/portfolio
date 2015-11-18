@@ -65,36 +65,71 @@ article {
     padding-top: 8rem;
     padding-bottom: 8rem;
     font-size: 3rem;
-
-
  }
+/* For the home header only*/
+ #home-hero{
+	color: #1e1e1e;
+    text-align: center;
+    align-item: center;
+    text-colour: white;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    font-size: 3rem;
+}
 
 /*Hero banner img example*/
 #hero-test{
 	background-image: url("../imgs/vancouver_skyline_test.jpg");
     background-repeat: no-repeat;
     width: auto;
-    max-height: 400px;
+    max-height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+#project1{
+	background-image: url("https://blog-photos.dogvacay.com/wp-content/uploads/2012/10/dog-lobster-halloween-costume.jpeg");
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+#project2{
+	background-image: url("https://blog-photos.dogvacay.com/wp-content/uploads/2012/10/dog-lobster-halloween-costume.jpeg");
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+#project3{
+	background-image: url("https://blog-photos.dogvacay.com/wp-content/uploads/2012/10/dog-lobster-halloween-costume.jpeg");
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+#project4{
+	background-image: url("https://blog-photos.dogvacay.com/wp-content/uploads/2012/10/dog-lobster-halloween-costume.jpeg");
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
     background-size: cover;
     background-position: center;
 }
 
 
 .container-footer{
-	text-align: left;
-    background-color: #e1e1e1;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 5rem;
-    bottom: 100%;
-    width: 100%
-    background-color: blue;
+	width: 100%;
+    background-color: transparent;
+    bottom: 0px;
+    left: 0px;
 }
 
 .footer{
-	text-align: left;
+	text-align: center;
+	color: #acacac;
 }
 
 /* Body Texts and Lists*/
@@ -160,10 +195,11 @@ a:active, a:hover, a:focus {
 
 /* Standard Image/Figure Code */
 img {
+	display: block;
+    margin: 0 auto;
 	height: auto; 
 	width: auto;
 	max-width: 100%;
-	/*border: 1px solid #888888; */
 }
 
 
@@ -173,11 +209,12 @@ figure {
 
 
 figcaption {
-	font-size: 1.5rem;
+	text-align: center;
+	font-size: 1.25rem;
 	font-style: italic;
 	font-weight: normal;
 	line-height: auto;
-	color: #00995F;
+	color: #939393;
 }
 
 

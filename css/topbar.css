@@ -6,10 +6,13 @@
 
 .toplink.active {
 	color: #558AC3;
+	font-weight: 500;
 }
 
 .toplink:hover, .toplink:focus {
 	color: #104D90;
+	transition: 0.5s;
+
 }
 
 /* Hiding Menus */
@@ -73,7 +76,7 @@
 }
 
 .topbar {
-	background-color: rgba(255,255,255,0.9);
+	background-color: rgb(255,255,255);
 	box-shadow: 0 0.2rem 1rem 0px rgba(0,0,0,0.26);
 	position: fixed;
 	top: 0;
@@ -103,9 +106,6 @@
 	display: none;
 }
 
-.mobile-menu {
-	border: 1px solid #f1f1f1;
-}
 
 
 /* Mobile Width Query */
@@ -142,6 +142,6 @@
 
 	.topbar .container.mobile .mobile-menu li.mobile-li:hover,
 	.topbar .container.mobile .mobile-menu li.mobile-li:focus {
-		/*background-color: #384448;*/
+		background-color: #aacef6;
 	}
 }
