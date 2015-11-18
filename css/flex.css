@@ -27,68 +27,89 @@
 
 }
 
+.flex-button {
+  width: 270px;
+  height: 300px;
+  flex-grow:1;
+  overflow: hidden;
+  /*testing*/
+  border: 1px solid black;
+}
+
+p.flex-p {
+  padding: 1em;
+  flex-grow:1;
+  line-height: 1.25rem;
+  font-weight: normal;
+  font-size: 2em;
+  color: #104D90;
+  overflow: hidden;
+}
+
+.slide {
+  padding: 1em;
+  position: relative;
+  bottom: -100px;
+  height: 100px;
+  width: 100%;
+  background-color: #104D90;
+  visibility: none;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+
+.flex-button:hover .slide {
+  overflow: hidden;
+  color: #fff;
+  visibility: visible;
+  opacity: 1;
+  bottom:-75px;
+  transition: 0.5s;
+}
+
 .flex-item {
   padding: 1em;
   width: 270px;
   height: 300px;
   flex-grow:1;
   line-height: 1.25rem;
-  color: #384448;
   font-weight: normal;
-  font-size: 1em;
+  font-size: 2em;
+  color: #fff;
   /*testing*/
   background-color: orange;
 }
 
+
 .flex-item-img {
   padding: 1em;
   height: auto;
-  flex-grow:0;
+  flex-grow:1;
   line-height: 1.25rem;
-  color: #384448;
   font-weight: normal;
   font-size: 1em;
   display: inline;
 }
 
- /*general flex colums*/
-.flex-column-2 {
-          max-width: 20%;
-          min-width: 20%;
-          }
-.flex-column-4 {
-          max-width: 40%;
-          min-width: 40%;
-          }
-.flex-column-5 {
-          max-width: 50%;
-          min-width: 50%;
-          }         
-.flex-column-6 {
-          max-width: 60%;
-          min-width: 60%;
-          }
-.flex-column-8 {
-          max-width: 80%;
-          min-width: 80%;
-          }
-.flex-column-full {
-          max-width: 100%;
-          min-width: 100%;
-          }
+figcaption.flex-item-img-text { 
+  width: 50%;
+  position: relative;
+  padding: 0.5em;
+  display: inline;
+}
 
 section {
 	padding: 1rem;
 }
 
 @media (max-width: 50em) {
-  .flex-column-5, .flex-column-4, .flex-column-3, .flex-column-2 {
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%;
-  }
 
   .flex-container {
     width: 100%;
+  }
+
+  .flex-item-img-text{
+    font-weight: bold;
   }
 }
