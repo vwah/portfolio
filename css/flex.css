@@ -10,30 +10,34 @@
   flex: 1;
 }
 .flex-container{
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+
+ display: -webkit-flex;
   display: flex;
-  
-  -webkit-flex-flow: row wrap;
-  justify-content; space-around;
-
-  width: 100%;
-
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: space-between;
+  /* You can set flex-wrap and flex-direction individually */
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* tweak the where items line up on the row */
+  /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
 }
 
+
+
 .flex-button {
-  width: 270px;
+  width: 50%;
   height: 300px;
   flex-grow:1;
   overflow: hidden;
   /*testing*/
-  border: 1px solid black;
+/*  border: 1px solid black;
+  background-color: orange;*/
 }
 
 .flex-p {
@@ -82,10 +86,12 @@ section {
 	padding: 1rem;
 }
 
-@media (max-width: 50em) {
+@media (max-width: 40em) {
 
   .flex-container {
     width: 100%;
   }
-
+  .flex-button {
+  width: 100%;
+  } 
 }
