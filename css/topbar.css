@@ -1,16 +1,16 @@
 .toplink {
 	font-weight: normal;
-	color: #939393;
+	color: #a7a7a7;
 	transition: 0.5s;
 }
 
 .toplink.active {
-	color: #558AC3;
-	font-weight: 500;
+	color: #006B42;
+	font-weight: normal;
 }
 
 .toplink:hover, .toplink:focus {
-	color: #104D90;
+	color: #006B42;
 	transition: 0.5s;
 
 }
@@ -23,23 +23,23 @@
 	padding: 0.7rem 1rem;
 	margin: 0;
 	font-weight: normal;
-	color: #939393;
+	color: #a7a7a7;
 	transition: 0.5s;
 
 }
 
 .topbar .container nav ul li ul a.toplink.active {
 	width: auto;
-	color: #558AC3;
-	font-weight: 500;
+	color: #006B42;
+	font-weight: normal;
 }
 
 
 .topbar .container nav ul li ul a:hover, .topbar .container nav ul li ul a:focus {
 	width: auto;
-	color: #104D90;
+	color: #006B42;
 	transition: 0.5s;
-	background-color: #aacef6;
+	background-color: #b2e0cf;
 }
 
 .topbar .container nav ul li ul .dropdown {
@@ -177,7 +177,7 @@
 	}
 
 		.topbar .container.mobile .mobile-menu li.dropdown-li {
-		border-left: 1px solid #e1e1e1;
+		border-left: 2px solid #e1e1e1;
 		margin: 5px 30px;
 		width: auto;
 		display: block;
@@ -187,7 +187,7 @@
 
 		.topbar .container.mobile .mobile-menu li.dropdown-li:hover,
 		.topbar .container.mobile .mobile-menu li.dropdown-li:focus {
-		border-left: 1px solid #104D90;
+		border-left: 2px solid #006B42;
 		margin: 5px 30px;
 		width: auto;
 		display: block;
@@ -196,6 +196,6 @@
 
 	.topbar .container.mobile .mobile-menu li.mobile-li:hover,
 	.topbar .container.mobile .mobile-menu li.mobile-li:focus {
-		background-color: #aacef6;
+		background-color: #b2e0cf;
 	}
 }

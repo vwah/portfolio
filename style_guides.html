@@ -8,14 +8,20 @@
   <link rel="stylesheet" href="css/topbar.css">
 
   <!-- Source Code Pro -->
-  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <div class="topbar">
     <div class="container">
       <nav>
         <ul>
-          <li><a href="template/template-home.html" class="toplink">Home</a></li>
-          <li><a href="template/template-project.html" class="toplink">Projects</a></li>
-          <li><a href="template/template-about.html" class="toplink">About</a></li>
+          <li class="dropdown-menu"><a href="template/home.html" class="toplink">Projects</a>
+            <ul>
+              <li class="dropdown"><a href="template/ux-skateboard.html" class="toplink">Skateboard Website</a></li>
+              <li class="dropdown" ><a href="template/ur-dragonboat.html" class="toplink">Dragonboat Application</a></li>
+              <li class="dropdown"><a href="template/ux-steam.html" class="toplink">Steam Redesign</a></li>
+              <li class="dropdown"><a href="template/ux-calendar.html" class="toplink">Interactive Calendar</a></li>
+            </ul>
+          </li>
+          <li><a href="template/about.html" class="toplink">About</a></li>
           <li><a href="style_guides.html" class="toplink active">Style Guide</a></li>
         </ul>
       </nav>
@@ -27,10 +33,13 @@
           <li class="mobile-menu">
             <a href="#">Menu</a>
               <ul>
-                <li class="mobile-li"><a href="template/template-home.html" class="toplink">Home</a></li>
-                <li class="mobile-li"><a href="template/template-project.html" class="toplink">Projects</a>
+                <li class="mobile-li"><a href="template/home.html" class="toplink">Projects</a>
+                <li class="dropdown-li"><a href="template/ux-skateboard.html" class="toplink">Skateboard Website</a></li>
+                <li class="dropdown-li" ><a href="template/ur-dragonboat.html" class="toplink">Dragonboat Application</a></li>
+                <li class="dropdown-li"><a href="template/ux-steam.html" class="toplink">Steam Redesign</a></li>
+                <li class="dropdown-li"><a href="template/ux-calendar.html" class="toplink">Interactive Calendar</a></li>
                 </li>
-                <li class="mobile-li"><a href="template/template-about.html" class="toplink">About</a></li>
+                <li class="mobile-li"><a href="template/about.html" class="toplink">About</a></li>
                 <li class="mobile-li"><a href="../style_guides.html" class="toplink active">Style Guide</a></li>
               </ul>
           </li>
@@ -39,7 +48,6 @@
     </div> <!-- end of .container.mobile -->
   </div> <!-- end of .topbar -->
 </head>
-
 
 <body>
 
@@ -124,9 +132,9 @@
           <div class="box" id="darkblue"><p class="colour-block">#104D90</p></div>
           <div class="box" id="lightblue"><p class="colour-block">#558AC3</p></div>
           <div class="box" id="lightorange"><p class="colour-block">#FF9273</p></div>
-          <div class="box" id="darkorange"><p class="colour-block">#FF7B70</p></div>
-          <div class="box" id="darkgreen"><p class="colour-block">#00995F</p></div>
-          <div class="box" id="grey"><p class="colour-block">#939393</p></div>
+          <div class="box" id="green"><p class="colour-block">#00995F</p></div>
+          <div class="box" id="darkgreen"><p class="colour-block">#006B42</p></div>
+          <div class="box" id="grey"><p class="colour-block">#8C8F91</p></div>
           </div>
 
 <!-- Divider for spacing -->

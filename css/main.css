@@ -67,14 +67,22 @@ article {
     font-size: 3rem;
  }
 /* For the home header only*/
- #home-hero{
-	color: #1e1e1e;
+ .home-hero{
+	color: #1c1c1d;
     text-align: center;
     align-item: center;
-    text-colour: white;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding: 2rem 1rem;
+    font-size: 4rem;
+}
+
+#large-font{
+	font-weight: bold;
     font-size: 3rem;
+}
+
+#small-font{
+	font-weight: normal;
+	font-size: 1rem;
 }
 
 /*Hero banner img example*/
@@ -86,6 +94,7 @@ article {
     background-size: cover;
     background-position: center;
 }
+
 #project1{
 	background-image: url("https://blog-photos.dogvacay.com/wp-content/uploads/2012/10/dog-lobster-halloween-costume.jpeg");
     background-repeat: no-repeat;
@@ -124,8 +133,9 @@ article {
 }
 
 .footer{
+	padding: 5rem;
 	text-align: center;
-	color: #acacac;
+	color: #DBD6D6;
 }
 
 /* Body Texts and Lists*/
@@ -156,7 +166,7 @@ h1 {
 	margin-bottom: 0.5rem;
 	margin-top: 0.5rem;
 	letter-spacing: 0.005em;
-	color: #00995F;
+	color: #006B42;
 }
 
 h2 {
@@ -174,19 +184,19 @@ h3 {
 	font-size: 1.2rem;
 	font-weight: bold;
 	font-style: italic;
-	color: #939393;
+	color: #8C8F91;
 }
 
 /* Standard Links */
 a {
-	color: #104D90;
-	font-weight: bold; 
+	color: #00995F;
+	font-weight: normal; 
 	transition: 0.5s;
 	text-decoration: none;
 }
 
 a:active, a:hover, a:focus {
-	color: #558AC3;
+	color: #006B42;
 }
 
 /* Standard Image/Figure Code */
@@ -210,14 +220,14 @@ figcaption {
 	font-style: italic;
 	font-weight: normal;
 	line-height: auto;
-	color: #939393;
+	color: #8C8F91;
 }
 
 
 div.divider{
 	margin-top: 3rem;
 	margin-bottom: 3rem;
-	border-bottom: solid 1px #939393;
+	border-bottom: solid 1px #8C8F91;
 }
 
 
@@ -245,15 +255,15 @@ p.colour-block{
 	background-color: #FF9273;
 }
 
-#darkorange{
-	background-color: #FF7B70;
+#green{
+	background-color: #00995F;
 }
 
 #darkgreen{
-	background-color: #00995F;
+	background-color: #006B42;
 }
 #grey{
-	background-color: #939393;
+	background-color: #8C8F91;
 }
 
 /*End of style guide boxes*/
@@ -270,7 +280,7 @@ p.colour-block{
 	font-size: 1rem;
 	font-weight: bold;
 	text-transform: uppercase;
-	background: #104D90;
+	background: #00995F;
 	padding: 10px 28px 10px 28px;
 	text-decoration: none;
 	text-align: center;
@@ -285,7 +295,7 @@ p.colour-block{
 	font-size: 1rem;
 	font-weight: bold;
 	text-transform: uppercase;
-	background: #558AC3;
+	background: #006B42;
 	text-decoration: none;
 }
 .button:focus {
@@ -293,7 +303,7 @@ p.colour-block{
 	font-size: 1rem;
 	font-weight: bold;
 	text-transform: uppercase;
-	background: #FF7B70;
+	background: #006B42;
 	text-decoration: none;
 }
 
@@ -302,7 +312,7 @@ p.colour-block{
 	font-size: 1rem;
 	font-weight: bold;
 	text-transform: uppercase;
-	background: #FF7B70;
+	background: #00995F;
 	text-decoration: none;
 }
 
@@ -316,7 +326,7 @@ button {
 	font-size: 1rem;
 	font-weight: bold;
 	text-transform: uppercase;
-	background: #104D90;
+	background: #00995F;
 	padding: 20px 40px 20px 40px;
 	text-decoration: none;
 	text-align: center;
@@ -327,12 +337,12 @@ button {
 }
 
 button:hover {
-	background: #558AC3;
+	background: #006B42;
 	text-decoration: none;
 }
 
 button:active button:focus {
-	background: #FF7B70;
+	background: #006B42;
 	text-decoration: none;
 }
 
@@ -361,7 +371,7 @@ textarea{
 input{
 	transition: 0.25s;
 	border: 0;
-	border-bottom:solid 2px #DBD6D6;
+	border-bottom:solid 2px #acacac;
 	outline: none;
 	background-color: transparent;
 	width: 100%;
@@ -384,22 +394,22 @@ input:focus{
 }
 
 ::-webkit-input-placeholder {
-    color: #DBD6D6;
+    color: #acacac;
 	font-size: 1rem;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   	color: #4c4c4c;
+   	color: #acacac;
  	font-size: 1rem; 
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   	color: #4c4c4c; 
+   	color: #acacac; 
  	font-size: 1rem;
 }
 
 :-ms-input-placeholder {  
-   	color: #4c4c4c;
+   	color: #acacac;
 	font-size: 1rem;
 }
 
@@ -421,7 +431,7 @@ input:focus{
 	}
 
 	button{
-		padding: 10px 28px 10px 28px;
+		padding: 10px 25px 10px 25px;
 	}
 
 	h1 {
@@ -430,4 +440,19 @@ input:focus{
 	form{
 		max-width: 60%;
 	}
+	.home-hero{
+	color: #1c1c1c;
+    text-align: center;
+    align-item: center;
+    padding: 6rem 8rem;
+	}
+	#large-font{
+	font-weight: bold;
+    font-size: 4rem;
+}
+
+	#small-font{
+	font-weight: normal;
+	font-size: 1.25rem;
+}
 }

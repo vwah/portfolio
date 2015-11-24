@@ -28,24 +28,26 @@
 
 
 .flex-button {
-  width: 50%;
+  width: 45%;
   height: 300px;
   flex-grow:1;
   overflow: hidden;
+  background-color: green;
+  margin: 0.5em;
   /*testing*/
 /*  border: 1px solid black;
   background-color: orange;*/
 }
 
 .flex-p {
+  margin-top: 30px;
   padding: 1em;
-  bottom: -20px;
   height: 150px;
   padding-top: 50px;
   line-height: auto;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 2em;
-  color: #104D90;
+  color: #fff;
   overflow: hidden;
 }
 
@@ -55,7 +57,7 @@
   bottom: -120px;
   height: 100px;
   width: 100%;
-  background-color: #104D90;
+  background-color: #00995f;
   visibility: none;
   transition: 0.5s;
 }
@@ -106,7 +108,7 @@ section {
   bottom: 0px;
   height: 50px;
   width: 100%;
-  background-color: #104D90;
+  background-color: #00995f;
   visibility: visible;
   }
 
@@ -116,5 +118,26 @@ section {
   color: #fff;
   bottom: 0px;
   }
- 
+}
+
+
+
+
+@media (max-width: 60em) {
+  .slide {
+  padding: 1em;
+  position: relative;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  background-color: #00995f;
+  visibility: visible;
+  }
+
+  .flex-button:hover .slide {
+  visibility: visible;
+  overflow: hidden;
+  color: #fff;
+  bottom: 0px;
+  }
 }
