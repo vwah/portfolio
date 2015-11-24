@@ -10,22 +10,19 @@
   flex: 1;
 }
 .flex-container{
-
- display: -webkit-flex;
+  display: -webkit-flex;
   display: flex;
-  -webkit-align-items: center;
-  align-items: center;
+  -webkit-align-items: flex-start; stretch;
+  align-items: flex-start;
   -webkit-justify-content: center;
   justify-content: space-between;
-  /* You can set flex-wrap and flex-direction individually */
   -webkit-flex-direction: row;
   flex-direction: row;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  /* tweak the where items line up on the row */
-  /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
   -webkit-align-content: flex-end;
   align-content: flex-end;
+  width: 100%;
 }
 
 
@@ -42,8 +39,10 @@
 
 .flex-p {
   padding: 1em;
-  flex-grow:1;
-  line-height: 1.25rem;
+  bottom: -20px;
+  height: 150px;
+  padding-top: 50px;
+  line-height: auto;
   font-weight: normal;
   font-size: 2em;
   color: #104D90;
@@ -58,10 +57,8 @@
   width: 100%;
   background-color: #104D90;
   visibility: none;
-  opacity: 0;
   transition: 0.5s;
 }
-
 
 .flex-button:hover .slide {
   overflow: hidden;
@@ -73,13 +70,18 @@
 }
 
 .flex-item {
-  padding: 1em;
-  flex-grow:1;
+  align-item: stretch;
+  width: 42%;
   line-height: 1.25rem;
   font-weight: normal;
   font-size: 2em;
   color: #fff;
+  margin: 0 2%;
+}
 
+#border-TopBott{
+    border-top: 3px solid black;
+    border-bottom: 1px solid black;
 }
 
 section {
@@ -92,6 +94,27 @@ section {
     width: 100%;
   }
   .flex-button {
-  width: 100%;
+    width: 100%;
   } 
+  .flex-item{
+    width: 100%;
+  }
+
+  .slide {
+  padding: 1em;
+  position: relative;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  background-color: #104D90;
+  visibility: visible;
+  }
+
+  .flex-button:hover .slide {
+  visibility: visible;
+  overflow: hidden;
+  color: #fff;
+  bottom: 0px;
+  }
+ 
 }

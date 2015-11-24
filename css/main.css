@@ -46,9 +46,9 @@ nav a {
 
 
 article {
-	text-align: left;
+	text-align: cen;
 	margin: 0.5rem 0; 
-	padding: 2rem; 
+	padding: 1rem; 
 	/*border: 1px solid blue;*/
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -407,9 +407,11 @@ input:focus{
 
 /*Media Queries*/
 
-@media (min-width: 909px) {
+
+
+@media (min-width: 965px) {
 	.container {
-		max-width: 70%;
+		max-width: 50%;
 		margin: auto;
 	}
 
