@@ -37,6 +37,7 @@ body {
 	font-size: 1em; 
 	margin-top: 4rem;
 	color: #222;
+	background-color: #FAFAFA;
 }
 
 /* Navigation */
@@ -71,13 +72,13 @@ article {
 	color: #1c1c1d;
     text-align: center;
     align-item: center;
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
     font-size: 4rem;
 }
 
 #large-font{
 	font-weight: bold;
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 #small-font{
@@ -86,6 +87,11 @@ article {
 }
 
 /*Hero banner img example*/
+.vwah-logo{
+	padding: 8px 1.5rem;
+	vertical-align: text-bottom;
+}
+
 #hero-test{
 	background-image: url("../imgs/vancouver_skyline_test.jpg");
     background-repeat: no-repeat;
@@ -95,8 +101,19 @@ article {
     background-position: center;
 }
 
+.hero-img {
+	display: block;
+    margin: 0 auto;
+	height: auto; 
+	max-height: 550px;
+	width: auto;
+	max-width: 100%;
+}
+
+
+
 #project1{
-	background-image: url("https://blog-photos.dogvacay.com/wp-content/uploads/2012/10/dog-lobster-halloween-costume.jpeg");
+	background-image: url("../imgs/skateboard-thumbnail.jpg");
     background-repeat: no-repeat;
     height: auto;
     background-size: cover;
@@ -117,7 +134,7 @@ article {
     background-position: center;
 }
 #project4{
-	background-image: url("https://blog-photos.dogvacay.com/wp-content/uploads/2012/10/dog-lobster-halloween-costume.jpeg");
+	background-image: url("../imgs/Planit_Thumbnail.png");
     background-repeat: no-repeat;
     height: auto;
     background-size: cover;
@@ -138,6 +155,7 @@ article {
 	color: #DBD6D6;
 }
 
+
 /* Body Texts and Lists*/
 p, ul, ol {
 	font-size: 1rem;
@@ -145,6 +163,17 @@ p, ul, ol {
 	text-align: left;
 	font-weight: normal;
 	color: #3A3A3A;
+}
+
+ul {
+	padding: 0rem 1rem;
+	vertical-align: text-top;
+	list-style-image: url("../imgs/green_square_bullets-01.png");
+}
+
+li{
+	padding: 0.15rem 1rem;
+	vertical-align: text-top;
 }
 
 /* Text Decorations (bold/italic) */
@@ -166,7 +195,7 @@ h1 {
 	margin-bottom: 0.5rem;
 	margin-top: 0.5rem;
 	letter-spacing: 0.005em;
-	color: #006B42;
+	color: #2a2a2b;
 }
 
 h2 {
@@ -174,22 +203,29 @@ h2 {
 	font-weight: normal;
 	letter-spacing: 0.005em;
 	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
-	color: #E94B69;
+	margin-bottom: 0rem;
+	color: #2a2a2b;
 	line-height: 1.75rem;
-	color: #00995F;
 }
 
 h3 {
 	font-size: 1.2rem;
-	font-weight: bold;
+	font-weight: normal;
 	font-style: italic;
+	color: #8C8F91;
+	margin-top: 2rem;
+	margin-bottom: 0.1rem;
+}
+
+h4 {
+	font-size: 1rem;
+	font-weight: normal;
 	color: #8C8F91;
 }
 
 /* Standard Links */
 a {
-	color: #00995F;
+	color: #32ad7e;
 	font-weight: normal; 
 	transition: 0.5s;
 	text-decoration: none;
@@ -243,16 +279,18 @@ p.colour-block{
 	text-align: center;
 }
 
-#darkblue {
-	background-color: #104D90;
+#darkgrey {
+	background-color: #2a2a2b;
+	color: #2a2a2b;
 }
 
-#lightblue {
-	background-color: #558AC3;
+#lightestgreen {
+	background-color: #b2e0cf;
+	color: #b2e0cf;
 }
 
-#lightorange {
-	background-color: #FF9273;
+#lightergreen {
+	background-color: #32ad7e;
 }
 
 #green{
@@ -414,6 +452,16 @@ input:focus{
 }
 
 
+/*extras*/
+
+.bordertop{
+   border-top: 1px solid #c7c7c7;
+}
+
+.borderbottom{
+   border-bottom: 1px solid #c7c7c7;
+}
+
 
 /*Media Queries*/
 
@@ -444,15 +492,16 @@ input:focus{
 	color: #1c1c1c;
     text-align: center;
     align-item: center;
-    padding: 6rem 8rem;
+    padding: 6rem 7rem;
 	}
 	#large-font{
 	font-weight: bold;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 	#small-font{
 	font-weight: normal;
 	font-size: 1.25rem;
-}
+	}
+
 }

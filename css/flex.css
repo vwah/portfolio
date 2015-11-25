@@ -32,7 +32,7 @@
   height: 300px;
   flex-grow:1;
   overflow: hidden;
-  background-color: green;
+  background-color: #00995F;
   margin: 0.5em;
   /*testing*/
 /*  border: 1px solid black;
@@ -71,7 +71,7 @@
   transition: 0.5s;
 }
 
-.flex-item {
+.flex-item-half {
   align-item: stretch;
   width: 42%;
   line-height: 1.25rem;
@@ -81,9 +81,28 @@
   margin: 0 2%;
 }
 
+.flex-item-third {
+  align-item: stretch;
+  width: 30%;
+  line-height: 1.25rem;
+  font-weight: normal;
+  font-size: 2em;
+  color: #fff;
+  margin: 0 2%;
+}
+
+.flex-item-twothird {
+  align-item: stretch;
+  width: 62%;
+  line-height: 1.25rem;
+  font-weight: normal;
+  font-size: 2em;
+  color: #fff;
+  margin: 0 2%;
+}
 #border-TopBott{
-    border-top: 3px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid #c7c7c7;
+    border-bottom: 1px solid #c7c7c7;
 }
 
 section {
@@ -98,7 +117,13 @@ section {
   .flex-button {
     width: 100%;
   } 
-  .flex-item{
+  .flex-item-twothird{
+    width: 100%;
+  }
+  .flex-item-third{
+    width: 100%;
+  }
+  .flex-item-half{
     width: 100%;
   }
 
