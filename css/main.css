@@ -9,28 +9,6 @@ code {
 	font-size: 0.7rem;
 }
 
-/* The 'container' is contained by the body. Has Margins. */
-/* 
-	Look up CSS3 Flex properties! 'flex' is relative to other
-	flexbox items.
-*/
-.container {
-	display: -webkit-flex;
-  	display: flex;
-	max-width: 100%;
-	margin: auto;
-
-	flex-wrap: wrap;
-}
-
-.container.first {
-	margin-top: 4rem;
-}
-
-.flex-column {
- 	-webkit-flex: 1;
-	flex: 1;
-}
 
 body {
 	font-family: Roboto, Open Sans, Verdana, sans-serif;
@@ -47,26 +25,17 @@ nav a {
 
 
 article {
-	text-align: cen;
+	text-align: left;
 	margin: 0.5rem 0; 
 	padding: 1rem; 
 	/*border: 1px solid blue;*/
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
 
-
-/*Hero image and text*/
-.container-header{
-	color: #1e1e1e;
-    text-align: center;
-    align-item: center;
-    text-colour: white;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    font-size: 3rem;
- }
 /* For the home header only*/
  .home-hero{
 	color: #1c1c1d;
@@ -113,7 +82,7 @@ article {
 
 
 #project1{
-	background-image: url("../imgs/skateboard-thumbnail.jpg");
+	background-image: url("../imgs/skateboard-thumbnail.JPG");
     background-repeat: no-repeat;
     height: auto;
     background-size: cover;
@@ -196,6 +165,7 @@ h1 {
 	margin-top: 0.5rem;
 	letter-spacing: 0.005em;
 	color: #2a2a2b;
+	text-align: left;
 }
 
 h2 {
@@ -206,6 +176,7 @@ h2 {
 	margin-bottom: 0rem;
 	color: #2a2a2b;
 	line-height: 1.75rem;
+	text-align: left;
 }
 
 h3 {
@@ -215,12 +186,14 @@ h3 {
 	color: #8C8F91;
 	margin-top: 2rem;
 	margin-bottom: 0.1rem;
+	text-align: left;
 }
 
 h4 {
 	font-size: 1rem;
 	font-weight: normal;
 	color: #8C8F91;
+	text-align: left;
 }
 
 /* Standard Links */

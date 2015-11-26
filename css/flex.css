@@ -1,27 +1,100 @@
 .container{
+  
+  display: -webkit-flex;
+  display: -ms-flex-;
   display: flex;
+
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
-  align-items: stretch;
+
+  -webkit-align-items: flex-start; stretch;
+  -ms-align-items: flex-start; stretch;
+  align-items: flex-start; stretch;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+
+  -webkit-flex-flow: flex-start;
+  -ms-flex-flow: flex-start;
   flex-flow: flex-start;
+
+  -webkit-justify-content:flex-start;
+  -ms-justify-content:flex-start;
   justify-content:flex-start;
+
+  -webkit-align-items:flex-start;
+  -ms-align-items:flex-start;
   align-items:flex-start;
+
   -webkit-flex: 1;
+  -ms-flex: 1;
+  -flex: 1;
+
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1;
+
 }
 .flex-container{
   display: -webkit-flex;
+  display: -ms-flex-;
   display: flex;
+
   -webkit-align-items: flex-start; stretch;
-  align-items: flex-start;
-  -webkit-justify-content: center;
+  -ms-align-items: flex-start; stretch;
+  align-items: flex-start; stretch;
+
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
   justify-content: space-between;
+
   -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
+
   -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+
   -webkit-align-content: flex-end;
+  -ms-align-content: flex-end;
   align-content: flex-end;
+
+  -webkit-align-content: flex-end;
+  -ms-align-content: flex-end;
+  align-content: flex-end;
+
+  width: 100%;
+}
+
+.flex-article{
+
+  -webkit-align-items: flex-start; stretch;
+  -ms-align-items: flex-start; stretch;
+  align-items: flex-start; stretch;
+
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-align-content: flex-end;
+  -ms-align-content: flex-end;
+  align-content: flex-end;
+
+  -webkit-align-content: flex-end;
+  -ms-align-content: flex-end;
+  align-content: flex-end;
+
   width: 100%;
 }
 
@@ -30,6 +103,8 @@
 .flex-button {
   width: 45%;
   height: 300px;
+  -webkit-flex-grow:1;
+  -ms-flex-grow:1;
   flex-grow:1;
   overflow: hidden;
   background-color: #00995F;
@@ -59,19 +134,25 @@
   width: 100%;
   background-color: #00995f;
   visibility: none;
+  -webkit-transition: 0.5s;
+  -ms-transition: 0.5s;
   transition: 0.5s;
 }
 
 .flex-button:hover .slide {
   overflow: hidden;
-  color: #fff;
+  color: #ffffff;
   visibility: visible;
-  opacity: 1;
+
   bottom:-50px;
+  -webkit-transition: 0.5s;
+  -ms-transition: 0.5s;
   transition: 0.5s;
 }
 
 .flex-item-half {
+  -webkit-align-item: stretch;
+  -ms-align-item: stretch;
   align-item: stretch;
   width: 42%;
   line-height: 1.25rem;
@@ -79,9 +160,12 @@
   font-size: 2em;
   color: #fff;
   margin: 0 2%;
+  text-align: left;
 }
 
 .flex-item-third {
+  -webkit-align-item: stretch;
+  -ms-align-item: stretch;
   align-item: stretch;
   width: 30%;
   line-height: 1.25rem;
@@ -89,9 +173,12 @@
   font-size: 2em;
   color: #fff;
   margin: 0 2%;
+  text-align: left;
 }
 
 .flex-item-twothird {
+  -webkit-align-item: stretch;
+  -ms-align-item: stretch;
   align-item: stretch;
   width: 62%;
   line-height: 1.25rem;
@@ -99,6 +186,7 @@
   font-size: 2em;
   color: #fff;
   margin: 0 2%;
+  text-align: left;
 }
 #border-TopBott{
     border-top: 1px solid #c7c7c7;
@@ -140,7 +228,7 @@ section {
   .flex-button:hover .slide {
   visibility: visible;
   overflow: hidden;
-  color: #fff;
+  color: #ffffff;
   bottom: 0px;
   }
 }
@@ -159,10 +247,5 @@ section {
   visibility: visible;
   }
 
-  .flex-button:hover .slide {
-  visibility: visible;
-  overflow: hidden;
-  color: #fff;
-  bottom: 0px;
-  }
+
 }
