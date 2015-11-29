@@ -134,6 +134,8 @@
 
 .top-nav-button {
 	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
 	flex: 1;
 }
 
@@ -163,10 +165,12 @@
 	}
 
 	.topbar .container.mobile nav ul li:hover > ul {
+		top: 40px;
 		display: block;
 		color: #E94B69;
 		background-color: #f1f1f1;
 		width: auto;
+		box-shadow: 0 0.2rem 1rem 0px rgba(0,0,0,0.26);
 	}
 
 	.topbar .container.mobile .mobile-menu li.mobile-li {
