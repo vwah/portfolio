@@ -163,9 +163,10 @@
 		width: auto;
 
 	}
-
+/*Mobile Dropdown*/
 	.topbar .container.mobile nav ul li:hover > ul {
-		top: 40px;
+		top: 2.5rem;
+		left: 2.5rem;
 		display: block;
 		color: #E94B69;
 		background-color: #f1f1f1;

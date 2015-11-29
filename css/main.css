@@ -57,7 +57,7 @@ article {
 
 /*Hero banner img example*/
 .vwah-logo{
-	padding: 8px 1.5rem;
+	padding: 6px;
 	vertical-align: text-bottom;
 }
 
@@ -121,9 +121,12 @@ article {
 .footer{
 	padding: 5rem;
 	text-align: center;
-	color: #DBD6D6;
+	color: #afabab;
 }
 
+.footerColor{
+	color: #afabab;
+}
 
 /* Body Texts and Lists*/
 p, ul, ol {
