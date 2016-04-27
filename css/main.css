@@ -82,14 +82,14 @@ article {
 
 
 #project1{
-	background-image: url("../imgs/skateboard-thumbnail.JPG");
+	background-image: url("../imgs/skateboard-Screen.JPG");
     background-repeat: no-repeat;
     height: auto;
     background-size: cover;
     background-position: center;
 }
 #project2{
-	background-image: url("https://blog-photos.dogvacay.com/wp-content/uploads/2012/10/dog-lobster-halloween-costume.jpeg");
+	background-image: url("../imgs/ScienceWorld_Mockup.jpg");
     background-repeat: no-repeat;
     height: auto;
     background-size: cover;
@@ -214,7 +214,9 @@ a:active, a:hover, a:focus {
 /* Standard Image/Figure Code */
 img {
 	display: block;
-    margin: 0 auto;
+	padding-top: 1.5em;
+	padding-bottom: 0.5rem;
+    margin: auto;
 	height: auto; 
 	width: auto;
 	max-width: 100%;
@@ -228,11 +230,11 @@ figure {
 
 figcaption {
 	text-align: center;
-	font-size: 1.25rem;
-	font-style: italic;
+	font-size: 1rem;
 	font-weight: normal;
-	line-height: auto;
-	color: #8C8F91;
+	line-height: 1.3em;
+	text-align: center;
+	color: #3A3A3A;
 }
 
 
@@ -473,11 +475,10 @@ input:focus{
 	#large-font{
 	font-weight: bold;
     font-size: 5rem;
-}
+	}
 
 	#small-font{
 	font-weight: normal;
 	font-size: 1.25rem;
 	}
-
 }

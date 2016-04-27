@@ -219,8 +219,11 @@
   text-align: left;
 }
 #border-TopBott{
-    border-top: 1px solid #c7c7c7;
-    border-bottom: 1px solid #c7c7c7;
+  border-top: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+  padding-bottom: 5rem;
+}
+#border-Bottom{
 }
 
 section {
