@@ -1,5 +1,21 @@
 <!doctype html>
 <head>
+  <!--[if lte IE 9]>
+  <script type="text/javascript">
+  location.assign('redirect.html');
+  </script>
+  <![endif]-->
+
+  <!-- if IE 10 -->
+  <script type="text/javascript">
+     if (navigator.appName == 'Microsoft Internet Explorer')
+     {
+
+        self.location = "redirect.html"
+
+     }
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Welcome!</title>
@@ -7,7 +23,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/flex.css">
   <link rel="stylesheet" href="css/topbar.css">
-
+  <link rel="shortcut icon" href="imgs/vwah-logo.ico" type="image/x-icon" />
   <!-- Source Code Pro -->
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <div class="topbar">
@@ -34,7 +50,7 @@
           <li class="mobile-menu">
             <img src="imgs/vwah-logo.png" class="vwah-logo" alt="vwah-logo">
               <ul>
-                <li class="mobile-li"><a href="home.html" class="toplink active">Projects</a>
+                <li class="mobile-li"><a href="index.html" class="toplink active">Projects</a>
                 <li class="dropdown-li"><a href="ux-skateboard.html" class="toplink">Skateboard Website</a></li>
                 <li class="dropdown-li" ><a href="ui-dragonboat.html" class="toplink">Dragonboat Application</a></li>
                 <li class="dropdown-li"><a href="ux-steam.html" class="toplink">Steam Redesign</a></li>
@@ -52,9 +68,8 @@
 <!-- Begin body -->
 <body>
 <!-- Hero Banner begins -->
-  <div class="home-hero" id="large-font">UX Designer,<br> Avid Gamer,<br> Food Lover.</h1>
-    <p class="home-hero" id="small-font">I also love a good challenge, a good laugh, and the company of people. My name is Vincent Wah, and I'm very pleased that you're here.</p>
-  </div>
+<figure><img id="hero-banner" src="imgs/Portfolio-Hero-01.png"></figure>
+   <p class="home-hero" id="small-font">I also love a good challenge, a good laugh, and the company of people. Please take a look at my projects below.</p>
 
 <!-- Page content begins -->
   <div class="container">
@@ -79,7 +94,7 @@
 <!-- Footer begins -->
   <footer class="container-footer">
      <p class="footer"> 
-      <img src="imgs/vwah-logo.png" class="vwah-logo" alt="vwah-logo"><br>
+      <img src="imgs/vwah-logo.png" alt="vwah-logo"><br>
       Copyright &#169; 2014 - 2016 Vincent Wah<br>
       Quick Links:<br>
       <a href="about.html" class="footerColor">About</a><br>

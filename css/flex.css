@@ -248,6 +248,9 @@ section {
     width: 100%;
   }
 
+}
+@media (max-width: 1250px) {
+
   .slide {
   padding: 1em;
   position: relative;
@@ -255,6 +258,7 @@ section {
   height: 50px;
   width: 100%;
   background-color: #00995f;
+  background-opacity: 0.5;
   visibility: visible;
   color: #ffffff;
   opacity: 1;
