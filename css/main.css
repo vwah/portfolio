@@ -209,8 +209,8 @@ img {
     margin: auto;
 	height: auto; 
 	width: inherit;
-	padding-top: 1em;
-	padding-bottom: 1em;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
 }
 
 #portrait {
@@ -234,6 +234,8 @@ figcaption {
 	line-height: 1.3em;
 	text-align: center;
 	color: #3A3A3A;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 
