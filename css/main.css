@@ -207,7 +207,8 @@ img {
 	display: block;
     margin: auto;
 	height: auto; 
-	width: inherit;
+	width: auto;
+	max-width: 100%;
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
 }
